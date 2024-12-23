@@ -14,3 +14,16 @@ GameFrameX不仅是一套综合性的游戏开发与运维框架，它也将数�
 
 关于自动化构建和部署，GameFrameX通过支持Docker技术，让应用的打包、分发变得更加高效和标准化，确保了在不同环境下软件能够以同样的方式运行。此外，GameFrameX还整合了Codeup代码托管平台的自动构建系统，允许通过`tag`
 标签触发构建过程，进一步实现了代码变更的连贯性管理及自动化部署，减少了人工干预，提升了运维效率。
+
+
+# 在线文档
+
+`所有站点内容一致，不存在内容不一致的情况`
+
+文档地址 : https://gameframex.doc.alianblank.com
+
+备用文档地址 : https://gameframex-docs.pages.dev
+
+备用文档地址 : https://gameframex.doc.cloudflare.alianblank.com
+
+备用文档地址 : https://gameframex.doc.vercel.alianblank.com
