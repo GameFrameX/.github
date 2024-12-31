@@ -27,3 +27,11 @@ GameFrameX不仅是一套综合性的游戏开发与运维框架，它也将数�
 备用文档地址 : https://gameframex.doc.cloudflare.alianblank.com
 
 备用文档地址 : https://gameframex.doc.vercel.alianblank.com
+
+# 免责声明(适用于该组织下的所有库)
+
+所有插件均来自互联网.请各位使用时自行付费.如果以上插件涉及侵权.请发email或提交issue.本人将移除.谢谢
+
+该项目不得用于当地法律不允许的使用范围.如果使用.本人或本组织将不承认和承担任何的法律责任和条款约束.
+
+技术本无罪,错的是滥用技术的人
