@@ -38,7 +38,7 @@ Indie development should not be a lone battle: the framework is your weapon, the
 
 - **One codebase, four engines**: Unity, Cocos Creator, LayaBox, and Godot, with business logic decoupled from the engine. Switching engines does not mean rewriting your game — one dream lands on every target platform.
 - **A multi-process server that scales from prototype to production**: gateway, logic, and data each play their part; add capacity when the players come. Docker-based build and deploy keeps every environment identical — no more "but it worked on my machine."
-- **Shipping is one tag away**: Codeup, CNB, or GitHub Actions — pick whichever matches your team's hosting habits. Push a `tag` and the build and deployment take care of themselves; a release stops being a ritual and becomes an everyday commit.
+- **Shipping is one tag away**: Codeup, CNB, GitHub Actions, and beyond — mainstream pipelines work out of the box, and the one your team already runs plugs in just as well. Push a `tag` and the build and deployment take care of themselves; a release stops being a ritual and becomes an everyday commit.
 - **A data stack that works out of the box**: MongoDB for game data, built for high-concurrency reads and writes; PostgreSQL for the back office, solid and reliable; LuBan for config tables, auto-generated and guaranteed accurate; Protobuf for the protocol, one set of message definitions shared by client and server.
 - **A unified back office that shows you your players**: client management, ops management, data management, and game operations. Who is playing, what they play, where they get stuck — after launch, data is no longer a black box.
 
@@ -58,7 +58,7 @@ From that moment on, you are facing an assembled pipeline — not a pile of part
 
 **The solo indie developer** — one person wearing the hats of programmer, designer, and ops. Tune gameplay in Unity in the morning, pull a config table with LuBan at noon, push a `tag` in the afternoon to trigger a CI build and deploy, and watch player data on the unified back office in the evening. That is the daily routine GameFrameX prepares for indie developers.
 
-**The small team** — client and server share the same Protobuf contracts and the same data context; permission boundaries between admins and developers stay clear; Codeup, CNB, or GitHub Actions — pick whichever matches the team's existing hosting habits, with zero migration cost.
+**The small team** — client and server share the same Protobuf contracts and the same data context; permission boundaries between admins and developers stay clear; Codeup, CNB, GitHub Actions, and beyond — whatever CI the team already runs plugs right in, with zero migration cost.
 
 More examples and tutorials are available in the [online documentation](https://gameframex.doc.alianblank.com).
 
