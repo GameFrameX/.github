@@ -1,37 +1,117 @@
-## Hi 亲爱哒 👋
+<div align="center">
 
-GameFrameX是一款全面的集成式游戏开发框架，提供了从前端到后端的完整解决方案。该框架支持包括Unity、Cocos Creator、LayaBox、和Godot等多种主流游戏开发平台，确保开发者能够为不同的目标平台打造精美的游戏体验。
+<img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
 
-此外，GameFrameX拥有多进程服务器的支持，并且集成了Docker的自动化构建和部署，大大简化了游戏发布和维护过程。无论是在客户端管理、运维管理、数据管理，还是游戏数据的具体运营方面，GameFrameX都提供了强有力的后台支持，使得监控、优化和更新游戏变得前所未有的简单。
+# GameFrameX
 
-游戏团队通过GameFrameX能够实现资源的高效分配和管理，加快开发周期，降低运营成本，并且最终增强玩家的游戏体验。整合了先进的技术和易用的界面，GameFrameX为游戏开发和运营的各个环节提供了高效、灵活且可扩展的解决方案，让游戏从构想到上线，再到生命周期管理都成为一件轻松愉快的事情。
+[![License](https://img.shields.io/badge/license-blue.svg)](../LICENSE.md)
+[![Documentation](https://img.shields.io/badge/Documentation-blue.svg)](https://gameframex.doc.alianblank.com)
 
-GameFrameX不仅是一套综合性的游戏开发与运维框架，它也将数据管理和流程自动化提升至新的高度。该框架旨在通过使用MongoDB作为游戏数据库，提供了高性能、灵活的数据存储方案，这确保了大规模和复杂数据的快速读写能力，极大地增强了游戏的扩展性和稳定性。
+[![Discord](https://img.shields.io/badge/-5865F2?logo=discord&logoColor=white)](https://discord.gg/VDWUjWMDw9)
+[![GitHub](https://img.shields.io/badge/-181717?logo=github&logoColor=white)](https://github.com/GameFrameX/gameframex)
+[![Bilibili](https://img.shields.io/badge/-00A1D6?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1yrpeepEn7)
+[![Gitee](https://img.shields.io/badge/-C71D23?logo=gitee&logoColor=white)](https://gitee.com/GameFrameX/gameframex)
 
-在数据表的导入方面，GameFrameX采用了LuBan工具，它自动化并优化了数据表的处理流程，极大提高了开发效率，并且保证了数据的准确性和一致性。
+All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams
 
-为了满足后台管理的需求，GameFrameX选择了MySQL数据库，提供了一个稳固和可靠的后端管理系统。结合MongoDB和MySQL，GameFrameX在数据解决方案上实现了多样性和功能性的平衡，以满足不同场景下的业务需要。
+<br />
 
-关于自动化构建和部署，GameFrameX通过支持Docker技术，让应用的打包、分发变得更加高效和标准化，确保了在不同环境下软件能够以同样的方式运行。此外，GameFrameX还整合了Codeup代码托管平台的自动构建系统，允许通过`tag`
-标签触发构建过程，进一步实现了代码变更的连贯性管理及自动化部署，减少了人工干预，提升了运维效率。
+[Documentation](https://gameframex.doc.alianblank.com) · [Quick Start](#quick-start) · QQ Group: 467608841 / 233840761
 
+<br />
 
-# 在线文档
+**English** | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-`所有站点内容一致，不存在内容不一致的情况`
+</div>
 
-文档地址 : https://gameframex.doc.alianblank.com
+## Project Overview
 
-备用文档地址 : https://gameframex-docs.pages.dev
+Building an online game on your own? Count what lands on your shoulders: pick a client engine, write the server, choose the databases, wire up the config-table pipeline, set up release CI — and after launch, somehow find a back office to watch your player data. No single item on that list is hard. The hard part is that every one of them lands on you.
 
-备用文档地址 : https://gameframex.doc.cloudflare.alianblank.com
+GameFrameX hands you all of it at once: a multi-engine client, a multi-process server, dual databases, config-table tooling, the network protocol, a unified back office, and three-platform CI. You focus on the gameplay — the framework has already assembled the rest.
 
-备用文档地址 : https://gameframex.doc.vercel.alianblank.com
+A game engine extends your hands; GameFrameX extends your entire team — the server is an extension of your ops capacity, the back office is an extension of your operating capacity, and the CI pipeline is an extension of your release cadence. One person plus GameFrameX equals the firepower that used to take a full team.
 
-# 免责声明(适用于该组织下的所有库)
+Indie development should not be a lone battle: the framework is your weapon, the documentation your map, and the community your fellow travelers. From the first prototype to millions of players, there are companions at every step.
 
-所有插件均来自互联网.请各位使用时自行付费.如果以上插件涉及侵权.请发email或提交issue.本人将移除.谢谢
+### Features
 
-该项目不得用于当地法律不允许的使用范围.如果使用.本人或本组织将不承认和承担任何的法律责任和条款约束.
+- **One codebase, four engines**: Unity, Cocos Creator, LayaBox, and Godot, with business logic decoupled from the engine. Switching engines does not mean rewriting your game — one dream lands on every target platform.
+- **A multi-process server that scales from prototype to production**: gateway, logic, and data each play their part; add capacity when the players come. Docker-based build and deploy keeps every environment identical — no more "but it worked on my machine."
+- **Shipping is one tag away**: Codeup, CNB, or GitHub Actions — pick whichever matches your team's hosting habits. Push a `tag` and the build and deployment take care of themselves; a release stops being a ritual and becomes an everyday commit.
+- **A data stack that works out of the box**: MongoDB for game data, built for high-concurrency reads and writes; PostgreSQL for the back office, solid and reliable; LuBan for config tables, auto-generated and guaranteed accurate; Protobuf for the protocol, one set of message definitions shared by client and server.
+- **A unified back office that shows you your players**: client management, ops management, data management, and game operations. Who is playing, what they play, where they get stuck — after launch, data is no longer a black box.
 
-技术本无罪,错的是滥用技术的人
+## Quick Start
+
+### Installation
+
+Three steps to get running:
+
+1. Open the [Quick Start guide](https://gameframex.doc.alianblank.com)
+2. Follow the steps to bring GameFrameX into your project
+3. Push your first `tag` and watch CI turn it into a running server
+
+From that moment on, you are facing an assembled pipeline — not a pile of parts.
+
+## Usage Examples
+
+**The solo indie developer** — one person wearing the hats of programmer, designer, and ops. Tune gameplay in Unity in the morning, pull a config table with LuBan at noon, push a `tag` in the afternoon to trigger a CI build and deploy, and watch player data on the unified back office in the evening. That is the daily routine GameFrameX prepares for indie developers.
+
+**The small team** — client and server share the same Protobuf contracts and the same data context; permission boundaries between admins and developers stay clear; Codeup, CNB, or GitHub Actions — pick whichever matches the team's existing hosting habits, with zero migration cost.
+
+More examples and tutorials are available in the [online documentation](https://gameframex.doc.alianblank.com).
+
+## Dependencies
+
+- **MongoDB** — the game database: a high-performance, flexible storage solution that ensures fast reads and writes for large-scale and complex data, enhancing scalability and stability
+- **PostgreSQL** — the back-office database: a solid and reliable admin system; combined with MongoDB, it balances diversity and functionality to meet different business scenarios
+- **LuBan** — the data table tool: automates and optimizes the table processing pipeline, greatly improving development efficiency while guaranteeing data accuracy and consistency
+- **Protobuf** — the network messaging layer: efficient binary serialization for client-server and inter-process communication
+- **Docker** — automated build and deployment, ensuring the software runs the same way in every environment
+
+## Documentation & Resources
+
+`All sites serve identical content`
+
+- Docs: https://gameframex.doc.alianblank.com
+- Mirror: https://gameframex-docs.pages.dev
+- Mirror: https://gameframex.doc.cloudflare.alianblank.com
+- Mirror: https://gameframex.doc.vercel.alianblank.com
+
+## Community & Support
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GameFrameX/gameframex)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VDWUjWMDw9)
+[<img src="https://cdn.jsdelivr.net/npm/devicon@2/icons/linkedin/linkedin-original.svg" height="28" alt="LinkedIn" />](https://www.linkedin.com/in/alianblank)
+[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/GameFrameX/)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/alian_blank)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCD9QhSFJ5xZkn5NTSV-DVAw)
+[![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/alianblank.bsky.social)
+[![Bilibili](https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1yrpeepEn7)
+[![Gitee](https://img.shields.io/badge/Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/GameFrameX/gameframex)
+![QQ](https://img.shields.io/badge/QQ-467608841%2F233840761-EB1923?style=for-the-badge&logo=qq&logoColor=white)
+
+## Changelog
+
+See the [online documentation](https://gameframex.doc.alianblank.com) for the latest updates.
+
+## Disclaimer
+
+All plugins come from the internet. Please pay for them yourself where required. If any plugin involves copyright infringement, please send an email or open an issue, and it will be removed. Thank you.
+
+This project must not be used for purposes prohibited by local laws. If used, neither the owner nor this organization will recognize or assume any legal liability or be bound by any such terms.
+
+Technology itself is innocent; those who abuse it are at fault.
+
+## License
+
+See [LICENSE.md](../LICENSE.md) for license information.
+
+<!--
+EN: See [LICENSE.md](../LICENSE.md) for license information.
+zh-CN: 详见 [LICENSE.md](../LICENSE.md) 文件。
+zh-TW: 詳見 [LICENSE.md](../LICENSE.md) 檔案。
+ja: 詳しくは [LICENSE.md](../LICENSE.md) をご参照ください。
+ko: 자세한 내용은 [LICENSE.md](../LICENSE.md) 파일을 참조하세요.
+-->
