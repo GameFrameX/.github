@@ -26,13 +26,11 @@ All-in-One Solution for Indie Game Development · Empowering Indie Developers' D
 
 ## Project Overview
 
-Building an online game on your own? Count what lands on your shoulders: pick a client engine, write the server, choose the databases, wire up the config-table pipeline, set up release CI — and after launch, somehow find a back office to watch your player data. No single item on that list is hard. The hard part is that every one of them lands on you.
+If you know C#, you can build an online game on your own. The hard part was never the gameplay — it's everything around it: writing the server, picking databases, wiring the config-table pipeline, setting up release CI, and finding a back office to watch player data after launch. GameFrameX hands you all of it at once: a multi-engine client, a multi-process server, a unified back office, and CI that works out of the box — one language, C#, across client and server, one set of Protobuf contracts. You focus on the gameplay; the framework has the rest assembled.
 
-GameFrameX hands you all of it at once: a multi-engine client, a multi-process server, dual databases, config-table tooling, the network protocol, a unified back office, and three-platform CI. You focus on the gameplay — the framework has already assembled the rest.
+And you don't have to swallow it all in one bite. Start with the client alone and prototype your gameplay in the engine you already know; when you need multiplayer, add a C# server — the same language as your client, the same Protobuf contracts; when it's time to ship, the databases, back office, Docker, and CI are ready and waiting. The framework grows with your game, from the first prototype to millions of players, with no mid-journey stack swap.
 
-A game engine extends your hands; GameFrameX extends your entire team — the server is an extension of your ops capacity, the back office is an extension of your operating capacity, and the CI pipeline is an extension of your release cadence. One person plus GameFrameX equals the firepower that used to take a full team.
-
-Indie development should not be a lone battle: the framework is your weapon, the documentation your map, and the community your fellow travelers. From the first prototype to millions of players, there are companions at every step.
+Indie development should not be a lone battle: the framework is your weapon, the documentation your map, and the community your fellow travelers. One person plus GameFrameX equals the firepower that used to take a full team.
 
 ### Features
 
@@ -46,13 +44,7 @@ Indie development should not be a lone battle: the framework is your weapon, the
 
 ### Installation
 
-Three steps to get running:
-
-1. Open the [Quick Start guide](https://gameframex.doc.alianblank.com)
-2. Follow the steps to bring GameFrameX into your project
-3. Push your first `tag` and watch CI turn it into a running server
-
-From that moment on, you are facing an assembled pipeline — not a pile of parts.
+Get a game server running in three minutes — the full walkthrough is in the [Quick Start guide](https://gameframex.doc.alianblank.com).
 
 ## Usage Examples
 
@@ -60,9 +52,18 @@ From that moment on, you are facing an assembled pipeline — not a pile of part
 
 **The small team** — client and server share the same Protobuf contracts and the same data context; permission boundaries between admins and developers stay clear; Codeup, CNB, GitHub Actions, and beyond — whatever CI the team already runs plugs right in, with zero migration cost.
 
+**Games already live** — proof the framework holds up in real production:
+
+- **Animal Garden (どうぶつの花屋)** — Simulation · App Store (JP) / Google Play (KR)
+- **Late-Night BBQ (深夜的烧烤店)** — Idle Simulation · TapTap / App Store / Google Play
+- **Endless Loop (连续黑白)** — Strategy · live in production
+- **Dimensional Defense (异次元防线)** — Tower Defense · Google Play
+
 More examples and tutorials are available in the [online documentation](https://gameframex.doc.alianblank.com).
 
 ## Dependencies
+
+Nothing on this list you install and wire up by hand — the databases come up with a single `docker compose up`, and the LuBan and Protobuf toolchains are built into the framework's workflow:
 
 - **MongoDB** — the game database: a high-performance, flexible storage solution that ensures fast reads and writes for large-scale and complex data, enhancing scalability and stability
 - **PostgreSQL** — the back-office database: a solid and reliable admin system; combined with MongoDB, it balances diversity and functionality to meet different business scenarios
